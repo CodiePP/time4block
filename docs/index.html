@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script type="text/javascript" src="calculator.js"></script>
+  </head>
+  <body>
+    <center style="margin-top: 10em; font-face: trebuchet; font-size: 12pt;">
+      <h1>Cardano block time calculator</h1>
+      <P>
+      <table>
+        <tr>
+          <td></td><td>date/time</td><td>epoch and slot</td>
+        </tr>
+        <tr>
+          <td>UTC time</td>
+          <td><input type="text" size="18" id="ts" value=""></td>
+          <td>
+            <input type="text" size="4" id="epoch" value="0">
+            <input type="text" size="6" id="slot" value="0">
+        </tr>
+        <tr>
+          <td>POSIX time</td>
+          <td><input type="text" size=18 id="dt" value=""></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td><td>k factor</td><td><input type="text" size="6" id="k" value="2160"></td>
+        </tr>
+      </table>
+    </center>
+    <center style="margin-top: 6em; font-face: trebuchet; font-size: 10pt;">
+      <P>enter a value in any field and the others will be calculated
+      <P>The <a href="https://cardanodocs.com/introduction/">Cardano blockchain</a> employs Proof-of-Stake (PoS) to create new blocks every 20 seconds.
+      <P>Five days' work is kept in an <em>epoch</em>.
+      <P>find the source of this project on <a href="https://github.com/CodiePP/time4block">GitHub</a>
+    </center>
+  </body>
+</html>
+
